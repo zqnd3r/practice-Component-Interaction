@@ -10,6 +10,13 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'practice-Component-Interaction';
+  // title = 'practice-Component-Interaction';
   pText:string = '';
+  recievedChildMessage: string = '';
+
+  recieveMessage(msg: string){
+    this.recievedChildMessage = msg;
+  }
+
+
 }
